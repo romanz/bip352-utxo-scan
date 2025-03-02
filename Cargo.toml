@@ -1,0 +1,15 @@
+[package]
+name = "utxo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitcoin = "0.32"
+clap = { version = "4.5", features = [ "derive" ] }
+env_logger = "0.11"
+log = "0.4"
+bindex = { git = "https://github.com/romanz/bindex-rs", rev = "17f9d9f0b2fbba00c9f35b47b139189547ef0915" }
+# bindex = { path = "../bindex/bindex-lib" }
+silentpayments = "0.5"
+rayon = "1.12.0"
+itertools = "0.14.0"
